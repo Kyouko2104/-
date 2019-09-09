@@ -31,7 +31,7 @@ class Application():
 
     def load_images(self):
         self.yuiImage = ImageTk.PhotoImage(Image.open(constants['Yui']).resize((160, 160), Image.ANTIALIAS))
-        self.yuiImageLabel = Label(image=self.yuiImage, height=150,width=150)
+        self.yuiImageLabel = Label(image=self.yuiImage, height=150,width=150,bg=DEFAULT_COLOR)
         self.yuiImageLabel.image = self.yuiImage
         self.yuiImageLabel.place(relx=0.3, rely=0.5)
 
