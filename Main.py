@@ -6,7 +6,7 @@ constants = load(open('utils/constants.json'))
 
 class Application():
 
-    def __init__(self, parent):
+    def __init__(self, parent): 
         self.parent = parent
 
         self.load_hud()
@@ -29,8 +29,8 @@ class Application():
 
     def load_images(self):
         self.yuiImage = ImageTk.PhotoImage(Image.open(constants['Yui']))
-        self.yuiImageLabel = Label(image=self.yuiImage)
-        self.yuiImageLabel.place(relx=-0.3, rely=-0.3)
+        self.yuiImageLabel = Label(image=self.yuiImage, height=150,width=150)
+        self.yuiImageLabel.place(relx=0.3, rely=0.5)
 
 
 root = Tk()
