@@ -26,11 +26,12 @@ class Application():
 
     def load_hud(self):
         self.parent.geometry('450x900+600+0')
-        self.parent['bg'] = ['AntiqueWhite1']
+        self.parent['bg'] = 'AntiqueWhite1'
 
     def load_images(self):
-        self.yuiImage = ImageTk.PhotoImage(Image.open(constants['Yui']))
-        self.yuiImageLabel = Label(image=self.yuiImage, height=150, width=150, bg='AntiqueWhite1')
+        self.yuiImage = ImageTk.PhotoImage(Image.open(constants['Yui']).resize((160, 160), Image.ANTIALIAS))
+        self.yuiImageLabel = Label(image=self.yuiImage, height=150,width=150,bg=)
+        elf.yuiImageLabel.image = self.yuiImage
         self.yuiImageLabel.place(relx=0.3, rely=0.5)
 
 
